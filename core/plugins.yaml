@@ -13,7 +13,7 @@
     let g:spaceline_seperate_style= 'slant-cons'
     let g:spaceline_git_branch_icon= ''
 
-- repo: hardcoreplayers/vim-buffet
+- repo: bagrat/vim-buffet
 
 - repo: glepnir/dashboard-nvim
   hook_add: source  $VIM_PATH/modules/module-dashboard.vim
@@ -109,7 +109,7 @@
 - { repo: haya14busa/vim-asterisk, on_map: { nv: <Plug> }}
 - repo: lambdalisue/suda.vim
   on_event: BufRead
-  hook_add: let g:suda_smart_edit = 1
+  #  hook_add: let g:suda_smart_edit = 1
 
 - repo: ludovicchabant/vim-gutentags
   if: executable('ctags')
