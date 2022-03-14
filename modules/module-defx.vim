@@ -3,14 +3,20 @@
 " Problems? https://github.com/Shougo/defx.nvim/issues
 
 call defx#custom#option('_', {
-  \ 'resume': 1,
-  \ 'winwidth': 30,
+	\ 'direction': 'leftabove',
   \ 'split': 'vertical',
-  \ 'direction': 'topleft',
+  \ 'winwidth': 40,
+  \ 'resume': 1,
+  \ 'listed': 1,
   \ 'show_ignored_files': 0,
-  \ 'columns': 'mark:indent:git:icons:filename',
+  \ 'columns': 'mark:indent:git:icons:filename:size',
   \ 'root_marker': '[in]: ',
   \ })
+
+call defx#custom#column('filename', {
+		\ 'min_width':10,
+		\ 'max_width':25,
+	  \ })
 
 call defx#custom#column('git', {
   \   'indicators': {
