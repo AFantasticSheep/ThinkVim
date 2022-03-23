@@ -1,8 +1,3 @@
-" Gopls config
-if dein#tap('go-nvim')
-  autocmd FileType go LSP 'go'
-endif
-
 " ccls config
 if dein#tap('vim-lsp-cxx-highlight')
   autocmd FileType c LSP 'c/cpp'
